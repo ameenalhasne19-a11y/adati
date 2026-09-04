@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ameenalhasne19-a11y.github.io/adati/sitemap.xml
