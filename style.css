@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7f5;
+    color: #17221c;
+}
+
+header {
+    background: #087443;
+    color: white;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.subtitle {
+    opacity: .9;
+}
+
+main {
+    width: min(850px, 92%);
+    margin: 50px auto;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.badge {
+    display: inline-block;
+    background: #dff3e8;
+    color: #087443;
+    padding: 7px 13px;
+    border-radius: 30px;
+    font-size: 13px;
+}
+
+h1 {
+    font-size: 34px;
+    margin: 15px 0 8px;
+}
+
+.hero p {
+    color: #68756e;
+}
+
+.card {
+    background: white;
+    padding: 22px;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(0,0,0,.07);
+}
+
+textarea {
+    width: 100%;
+    min-height: 260px;
+    border: 2px solid #e3e9e5;
+    border-radius: 15px;
+    padding: 17px;
+    font-size: 17px;
+    resize: vertical;
+    outline: none;
+}
+
+textarea:focus {
+    border-color: #087443;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.stats div {
+    background: #f2f6f3;
+    padding: 17px;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.stats strong {
+    display: block;
+    color: #087443;
+    font-size: 27px;
+}
+
+.stats span {
+    color: #69766f;
+    font-size: 13px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+button {
+    flex: 1;
+    border: 0;
+    padding: 14px;
+    border-radius: 11px;
+    background: #087443;
+    color: white;
+    font-size: 15px;
+}
+
+button:last-child {
+    background: #e8eeea;
+    color: #26332b;
+}
+
+footer {
+    text-align: center;
+    color: #7a857f;
+    padding: 25px;
+}
+
+@media(max-width:600px) {
+    .subtitle {
+        display: none;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+}
